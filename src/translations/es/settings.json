@@ -1,0 +1,18 @@
+{
+  "settingsHeader": "Ajustes",
+  "closeText": "Cerrar",
+  "directInput": "Entrada numérica",
+  "directInputHint": "Utilice la entrada numérica para números en lugar de deslizadores.",
+  "printLogs": "Imprimir registros",
+  "printLogsHint": "Imprimirá los registros en la consola si está habilitado.",
+  "extendedDebug": "Depuración extendida",
+  "extendedDebugHint": "Imprimirá además las direcciones que están siendo leída/escritas y la carga útil enviada/recibida.",
+  "disableCommon": "Desactivar los ajustes comunes",
+  "disableCommonHint": "Cada ESC tendrá su propia configuración en lugar de tener una sección común que sea válida para todos los ESC.",
+  "enableAdvanced": "Activar opciones avanzadas",
+  "enableAdvancedHint": "Añade ajustes avanzados como volcar el firmware.",
+  "unstableVersions": "Mostrar pre-lanzamientos de firmware",
+  "unstableVersionsHint": "Mostrar versiones inestables del firmware y pre-lanzamientos",
+  "skipCache": "Ignorar caché",
+  "skipCacheHint": "Activa esta opción si no ves la última versión en la selección del firmware."
+}

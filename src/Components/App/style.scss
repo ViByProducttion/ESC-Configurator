@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  outline: none;
+}
+
+body {
+  font-family: 'open_sansregular', 'Segoe UI', Tahoma, sans-serif;
+  font-size: 12px;
+  color: #303030;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+  background: #fff;
+  background-image: linear-gradient(to bottom, transparent, rgb(0 0 0 / 6%));
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+  width:99%;
+  margin-bottom: 5px;
+  border: 1px solid;
+  border-color: #ccc;
+  border-radius: 3px;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 7px;
+    right: 7px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: #888 transparent;
+    pointer-events: none;
+  }
+
+  &::before {
+    border-bottom-style: solid;
+    border-top: none;
+    margin-top: -2px;
+  }
+
+  &::after {
+    margin-top: 5px;
+    border-top-style: solid;
+    border-bottom: none;
+  }
+
+  .dropdown__select {
+    position: relative;
+    overflow:visible;
+    width: 100%;
+    margin-top:0;
+    padding: 1px 8px 6px 5px;
+    height: 23px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #62717a;
+    text-shadow: 0 1px white;
+
+    /* Fallback for IE 8 */
+    background: #f2f2f2;
+
+    /* "transparent" doesn't work with Opera */
+    background: rgb(0 0 0 / 0%) !important;
+    border: 0;
+    border-radius: 0;
+    appearance: none;
+
+    &:focus {
+      z-index: 3;
+      width: 90%;
+      color: #4fa619;
+      outline: 0 solid #49aff2;
+      outline: 0 solid -webkit-focus-ring-color;
+      outline-offset: 5px;
+      height:25px;
+    }
+
+    & > option {
+      margin: 3px;
+      padding: 6px 8px;
+      text-shadow: none;
+      background: #f2f2f2;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+
+  &.dark {
+    background: #3e403f;
+    background-image: linear-gradient(to bottom, transparent, rgb(0 0 0 / 40%));
+    border-color: #111 #0a0a0a black;
+    box-shadow: inset 0 1px rgb(255 255 255 / 10%), 0 1px 1px rgb(0 0 0 / 20%);
+    color:#a6a6a6;
+    text-shadow:0 1px rgb(0 0 0 / 25%);
+
+    &::before {
+      border-bottom-color: #aaa;
+    }
+
+    &::after {
+      border-top-color: #aaa;
+    }
+
+    .dropdown__select {
+      color: #a6a6a6;
+      text-shadow: 0 1px black;
+      background: #444;
+      padding-right: 20px;
+    }
+
+    .dropdown__select:focus {
+      color: #fff;
+    }
+
+    .dropdown__select > option {
+      background: #56ab1a;
+      text-shadow: 0 1px rgb(0 0 0 / 40%);
+    }
+  }
+}
+
+.main {
+  padding: 0;
+  height: calc(100% - 7px);
+
+  .main__header {
+    background: #3d3f3e;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .main__bar {
+    height:110px;
+    width:100%;
+    background-image: linear-gradient(to top, transparent, rgb(0 0 0 / 15%));
+  }
+
+  .main__logo {
+    background: url('images/icon_128.png');
+    position: relative;
+    float: left;
+    height: 90px;
+    z-index: 0;
+    background-repeat: no-repeat;
+    width: 95px;
+    background-position: left center;
+    background-size: contain;
+    margin-left: 23px;
+    margin-top: 10px;
+
+    @media only screen and (width <= 600px) {
+      margin-left: 15px;
+    }
+  }
+
+  .main__settings {
+    float: right;
+    margin-top: 12px;
+    width: 120px;
+    margin-right: 10px;
+
+    @media only screen and (width <= 600px) {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      background: #3d3f3e;
+
+      & > * {
+        flex: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 6px;
+      }
+
+      a {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .button.button--dark {
+    a,
+    button {
+      text-align: center;
+      border-radius: 3px;
+      border: 1px solid var(--color-primary);
+      float: right;
+      font-family: "open_sansbold", Arial, sans-serif;
+      font-size: 12px;
+      text-shadow: 0 1px rgb(0 0 0 / 25%);
+      display: block;
+      cursor: pointer;
+      transition: all ease 0.2s;
+      margin: 0;
+      width: 100%;
+      line-height: 21px;
+      padding: 0;
+      color: #a6a6a6;
+      background: #3e403f;
+      border-color: #111 #0a0a0a black;
+      background-image: linear-gradient(to bottom, transparent, rgb(0 0 0 / 40%));
+
+      &:active {
+        color: white;
+      }
+    }
+
+    a {
+      margin-top: 8px;
+      width: 118px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'open_sanssemibold', Arial, sans-serif;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #999;
+  }
+
+  .message-positive {
+    color: green;
+  }
+
+  .message-emphasis {
+    color: yellow;
+  }
+
+  .message-negative {
+    color: red;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button {
+      opacity: 1; /* required for chromium 33+ beta */
+      margin-left: 5px;
+  }
+
+  .clear-both {
+    clear: both;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .half {
+    width: 50%;
+
+    @media only screen and (width <= 600px) {
+      width: 100%;
+    }
+  }
+
+  .spacer {
+      padding-left: 7px;
+      padding-right: 7px;
+      width: calc(100% - 14px);
+      float: left;
+  }
+}
+
+.default-btn {
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+
+  &button,
+  button,
+  a {
+    cursor: pointer;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid var(--color-tertiary);
+    color: var(--color-tertiary);
+    font-family: 'open_sanssemibold', Arial, sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+    display: block;
+    width: 100%;
+    transition: all ease 0.2s;
+    text-decoration:none;
+    font-weight: bold;
+  }
+
+  button:hover,
+  a:hover {
+    background-color: var(--color-tertiary);
+    color: #fff;
+    text-shadow: 0 1px rgb(0 0 0 / 25%);
+    transition: all ease 0.2s;
+    text-decoration:none;
+  }
+
+  button[disabled],
+  button[disabled]:hover,
+  a.disabled,
+  a.disabled:hover {
+    background-color: #fff;
+    text-shadow: none;
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: default;
+  }
+
+  button:active,
+  a:active {
+    background-color: var(--color-tertiary);
+    transition: all ease 0.0s;
+    box-shadow: inset 0 1px 5px rgb(0 0 0 / 35%);
+  }
+
+
+
+  .red {
+    color: red;
+  }
+}
+
+.content_wrapper {
+  padding: 20px;
+  position: relative;
+  margin-bottom: 50px;
+
+  @media only screen and (width <= 600px) {
+    margin-bottom: 120px;
+  }
+
+  @media screen and (width <= 768px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 13px;
+  }
+}
+
+#tab-landing {
+  .content_wrapper {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-show {
+  display: none;
+}
+
+@media only screen and (width <= 600px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+}
+
+.backdrop {
+  background: rgb(0 0 0 / 75%);
+  position: fixed;
+  inset: 0;
+}

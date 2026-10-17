@@ -1,0 +1,40 @@
+.profile-system-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: transform 0.1s;
+        padding: 0 4px;
+
+        &:hover:not(:disabled) {
+            transform: scale(1.1);
+        }
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+
+    .profile-select {
+        padding: 4px 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        background: #fff;
+        min-width: 150px;
+        font-family: inherit;
+    }
+
+    .profile-divider {
+        color: #888;
+        margin: 0 4px;
+    }
+}

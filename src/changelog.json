@@ -1,0 +1,491 @@
+[
+  {
+    "title": "0.32.1",
+    "items": [
+      "Bluejay: D & E layout for X MCU",
+      "Enhancement: More melodies"
+    ]
+  },
+  {
+    "title": "0.32.0",
+    "items": [
+      "Bugfix: Add more space to display ESC information",
+      "Translation: Add Russian translations",
+      "Translation: Fixed typo",
+      "Enhancement: More melodies"
+    ]
+  },
+  {
+    "title": "0.31.0",
+    "items": [
+      "Bugfix: Fix running brake range on AM32",
+      "Bugfix: Update correct ESC when only a single ESC is attached (when multiple would be expected)",
+      "Bugfix: Allow recovery via UI if ESC can still be read, but previous flash failed",
+      "Bluejay: Adjust min/max startup power defaults",
+      "Enhancement: Show checklist when chosing new firmware version",
+      "Enhancement: Link to release notes of new versions if available",
+      "Enhancement: More melodies",
+      "Translation: Add Ukrainian and French translations"
+    ]
+  },
+  {
+    "title": "0.30.2",
+    "items": [
+      "Bluejay: Extract bugfix version from Name setting (>=v0.20.0)"
+    ]
+  },
+  {
+    "title": "0.30.1",
+    "items": [
+      "Chore: Add warning to downgrade Bluejay"
+    ]
+  },
+  {
+    "title": "0.30.0",
+    "items": [
+      "Bugfix: Read back settings after writing",
+      "Bugfix: Check 3D mode when stopping motors on disconnect",
+      "Chore: Improved logging",
+      "Chore: Read version from package.json",
+      "Chore: Improved test coverage",
+      "Chore: Refactored state to redux slices",
+      "Chore: Improved some tooltip texts",
+      "Enhancement: Do not crash on flash verification fail",
+      "Enhancement: More melodies",
+      "Enchansement: Group settings in sections",
+      "Enchansement: Allow to order settings bei weight within groups",
+      "AM32: New layout support",
+      "AM32: Improved firmware detection",
+      "AM32: Increased reset timeout after flashing",
+      "Bluejay: Add multiple new settings for v0.20.x",
+      "Bluejay: Preparations for Bluejay versions without PWM selection on flash"
+    ]
+  },
+  {
+    "title": "0.29.0",
+    "items": [
+      "Enhancement: More melodies",
+      "Enhancement: Detect if FC is in 4 way interface mode after reconnection and reset",
+      "Enhancement: Detect if radio is on and do not allow reading/flashing",
+      "Bluejay: New layout including pwm settings",
+      "Bluejay: New layout including power settings"
+    ]
+  },
+  {
+    "title": "0.28.1",
+    "items": [
+      "Chore: Fixed version"
+    ]
+  },
+  {
+    "title": "0.28.0",
+    "items": [
+      "Enhancement: More melodies",
+      "Enhancement: Show warning to turn off radio",
+      "Enhancement: Dump firmware as HEX file instead of BIN",
+      "Enhancement: Allow skipping cache for new releases",
+      "Bugifx: Do not check for mistagging if JESC is detected",
+      "Bugfix: Properly display flashed fail in ESC name",
+      "Bugfix: Allow re-flashing if firmware is broken",
+      "Bugfix: Do not cut off hint text for melody sync checkbox"
+    ]
+  },
+  {
+    "title": "0.27.2",
+    "items": [
+      "Chore: Limit to fetching last 5 releases"
+    ]
+  },
+  {
+    "title": "0.27.1",
+    "items": [
+      "Bugfix: Do not cache 404 hex files"
+    ]
+  },
+  {
+    "title": "0.27.0",
+    "items": [
+      "BB: Add support for BB51 based ESCs",
+      "AM32: Add support for G071 MCUs",
+      "AM32: Update layouts and versions",
+      "Translation: Add Italian translation",
+      "Translation: Add Czech translation",
+      "Translation: Remove incomplete French translation",
+      "Chore: Text improvements",
+      "Chore: Improved test coverage",
+      "Chore: Improved documentation",
+      "Bugfix: Properly update UI after flashing only one ESC",
+      "Bugfix: Stop motors when disconnecting from configurator"
+    ]
+  },
+  {
+    "title": "0.26.1",
+    "items": [
+      "Chore: Update Bluejay links to new source"
+    ]
+  },
+  {
+    "title": "0.26.0",
+    "items": [
+      "Chore: Update Bluejay source to fetch files from new organisation",
+      "Enhancement: More melodies",
+      "Translation: Add french translation"
+    ]
+  },
+  {
+    "title": "0.25.0",
+    "items": [
+      "AM32: Add more ESC layouts",
+      "AM32: Compare beginning of vector tables before flashing new firmware"
+    ]
+  },
+  {
+    "title": "0.24.0",
+    "items": [
+      "Translation: Add polish translation"
+    ]
+  },
+  {
+    "title": "0.23.1",
+    "items": [
+      "Chore: Add issue templates"
+    ]
+  },
+  {
+    "title": "0.23.0",
+    "items": [
+      "Enhancement: Upload coverage reports to codecov with github workflows",
+      "Enhancement: More melodies",
+      "Enhancement: Only show LED settings on layout that actually support them",
+      "Enhancement: Only show buttons if they can actually be used",
+      "Enhancement: Imporved some text messages",
+      "Enhancement: Hex files are now cached for a year instead of being adding to local storage",
+      "Bugfix: Fetch releases only via CORS proxy if direct access fails",
+      "Bugfix: Properly detect BLHlei_M 16.8",
+      "Chore: Improved linting warnings and rules",
+      "Chore: Improved code coverage",
+      "Chore: Code cleanup"
+    ]
+  },
+  {
+    "title": "0.22.0",
+    "items": [
+      "Enhancement: Detect BLHeli_M and recommend to use dedicated configurator",
+      "Enhancement: Properly handle empty melody",
+      "Enhancement: More melodies",
+      "Enhancement: Allow logs to be cleared manually and after saving the log",
+      "Enhancement: Show warning if non AM32 ARM firmware has been detected - it then is very likely BLHeli_32",
+      "Enhancement: Log detected browser, version and OS",
+      "Enhancement: Detect Brave browser and show incompatibility message",
+      "Enhancement: Fetch available firmware versions from Github API (Bluejay and AM32)",
+      "Enhancement: Allow to set colors on certain ESCs with configurable LEDs",
+      "Enhancement: Allow older firmware versions to be blacklisted when fetching from Github",
+      "Update: Add settings layout for Bluejay v0.16",
+      "Update: Dependency updates"
+    ]
+  },
+  {
+    "title": "0.21.0",
+    "items": [
+      "Update: Add settings layout for Bluejay v0.15",
+      "Enhancement: Add braking setting to Bluejay",
+      "Enhancement: Use locally maintained source list for BLHeli_S versions in order to support 'new' layouts"
+    ]
+  },
+  {
+    "title": "0.20.1",
+    "items": [
+      "Enhancement: Use CORS proxy with all requests"
+    ]
+  },
+  {
+    "title": "0.20.0",
+    "items": [
+      "Update: Add AM32 v1.78",
+      "Update: Changed cors proxy URL",
+      "Added more melodies"
+    ]
+  },
+  {
+    "title": "0.19.1",
+    "items": [
+      "Bugfix: Fix travis builds by installing python before installing node dependencies"
+    ]
+  },
+  {
+    "title": "0.19.0",
+    "items": [
+      "Enhancement: Enable melodies for AM32",
+      "Enhancement: Pre-select current ESC firmware when flashing",
+      "Enhancement: Cache firmware versions and layouts - do not store them in the app",
+      "Enhancement: Disable connect/disconnect button when app not idle",
+      "Enhancement: Added more melodies",
+      "Wording: Normalized ESCs and BLHeli_S",
+      "Bugfix: Fixed min/max properties with slider",
+      "Bugfix: Dump the proper ESC instead of defaulting to the last one",
+      "Bugfix: Update the proper ESC after flashing a single ESC",
+      "Refactor: Removed firmware and ESC files - use the ones from the corresponding repository instead",
+      "Refactor: Overlay component",
+      "Refactor: Simplified firmware sources",
+      "Chore: Bluejay settings cleanup",
+      "Chore: Removed old Bluejay versions",
+      "Chore: Updated codecov dependency",
+      "Chore: Improve tests"
+    ]
+  },
+  {
+    "title": "0.18.0",
+    "items": [
+      "Translation: Added traditional chinese translation",
+      "Attempt to detect JESC and do not allow settings to be changed",
+      "Enhancement: Improve display of unsupported firmware/version",
+      "Bugfix: Improve detection of wrong dead-time on ESCs with L MCU"
+    ]
+  },
+  {
+    "title": "0.17.0",
+    "items": [
+      "Wording: Improved wording on mistagged firmware",
+      "Allow dumping of flashed firmware",
+      "Translation: Added spanish translation",
+      "Translation: Improved loading of additional languages",
+      "Translation: Fixed some typos",
+      "Tracking: Mistagged versions - tagged & detected",
+      "AM32: Allow flashing version 1.72",
+      "AM32: Remove old versions that do not follow the latest nameing schema",
+      "AM32: Add new ESCs",
+      "Bugfix: Check data byte length before reading voltage",
+      "Bugfix: Properly style warning in unsupported browsers",
+      "Refactored loaders into seperate file.",
+      "Refactored settings into a seperate file",
+      "Added more melodies"
+    ]
+  },
+  {
+    "title": "0.16.0",
+    "items": [
+      "Tracking: Track firmware and version when flashing",
+      "Documentation: Added history and credits section",
+      "Enhancement: Detect wrongly tagged BLHeli_S version",
+      "Enhancement: Allow flashing of 120 dead-time on Bluejay",
+      "Add link to report mistagged hardware",
+      "Add link to report Bluejay tested hardware"
+    ]
+  },
+  {
+    "title": "0.15.0",
+    "items": [
+      "Added setting to disable common settings and instead allow to adjust all settings on every ESC individually",
+      "Bugfix: still try to write settings even if ESC seems locked, print a message instead of throwing"
+    ]
+  },
+  {
+    "title": "0.14.1",
+    "items": [
+      "Added more melodies",
+      "Bugfix: Check if at least one ESC could be read before pushing to data layer"
+    ]
+  },
+  {
+    "title": "0.14.0",
+    "items": [
+      "Improved template",
+      "Improved readability of tests",
+      "Do not migrate settings between different firmwares",
+      "Bugfix: Properly update settings after writing",
+      "Bugfix: Continue reading ESCs even if one failed",
+      "Bugfix: Properly select the Layout on AM32"
+    ]
+  },
+  {
+    "title": "0.13.0",
+    "items": [
+      "More tests",
+      "Refactoring",
+      "Show hints on individual settings",
+      "Prevent double flashing while file is fetching",
+      "Added more melodies"
+    ]
+  },
+  {
+    "title": "0.12.1",
+    "items": [
+      "Fixed button misalignement"
+    ]
+  },
+  {
+    "title": "0.12.0",
+    "items": [
+      "Show synced screen when all melodies are the same",
+      "Show info when ESC connected count does not match what MSP is reporting",
+      "Melody preset selection",
+      "Save melodies for later",
+      "Load previously saved melodies",
+      "Styling improvements for mobile",
+      "Updated dependencies",
+      "Refactoring"
+    ]
+  },
+  {
+    "title": "0.11.0",
+    "items": [
+      "Bluejay melody editor",
+      "PWA Infobox",
+      "Tracking improvements",
+      "Styling improvements",
+      "Some refactoring"
+    ]
+  },
+  {
+    "title": "0.10.0",
+    "items": [
+      "Show battery charge if in Motor tab",
+      "Motor control via cursors",
+      "Added simplified Chinese",
+      "Improved translations",
+      "Set language to browser language if possible",
+      "Store logs in local storage",
+      "Sources generate display names",
+      "Show PWM frequency with Bluejay",
+      "Display AM32 bootloader version",
+      "Added coverage and lots of tests",
+      "Improved rendering of some components",
+      "Refactored to pure functions",
+      "Fixed issue where flashing through EMU would lead to firmware loss"
+    ]
+  },
+  {
+    "title": "0.9.1",
+    "items": [
+      "Add attribution to original project",
+      "Properly display ESCs, even if their settings can not be read",
+      "Link to chinese mirror"
+    ]
+  },
+  {
+    "title": "0.9.0",
+    "items": [
+      "Added netlify badge",
+      "Improved compatibility wording",
+      "Motor speed control",
+      "Improved documentation",
+      "Translateable log messages",
+      "Setting for printing log messages",
+      "Improved styling for mobile",
+      "Support Web USB - App now also works on Chrome for Android (mostly)",
+      "Added tests for helper utils",
+      "Added AM32 settings descriptions",
+      "Testing via travis",
+      "Improved serial queue"
+    ]
+  },
+  {
+    "title": "0.8.3",
+    "items": [
+      "Updated OG image path"
+    ]
+  },
+  {
+    "title": "0.8.2",
+    "items": [
+      "Swapped GNU-GPL for GNU-AGPL license",
+      "Check for app updates and inform user if there is an update",
+      "Decreased retries on inital settings reading",
+      "Wait a second after initializing the 4 way interface to"
+    ]
+  },
+  {
+    "title": "0.8.1",
+    "items": [
+      "Add discord Link"
+    ]
+  },
+  {
+    "title": "0.8.0",
+    "items": [
+      "Settings Screen",
+      "Direct input instead of sliders",
+      "Handle unsupported versions"
+    ]
+  },
+  {
+    "title": "0.7.0",
+    "items": [
+      "AM32 read/write settings",
+      "AM32 flash",
+      "Improved tool-tips",
+      "New color schema and logo",
+      "Refactored firmware selection"
+    ]
+  },
+  {
+    "title": "0.6.0",
+    "items": [
+      "Component refactoring",
+      "Better logging",
+      "Improved offline handling",
+      "Language switcher",
+      "Expanded Readme",
+      "Added tool-tops to settings",
+      "Use SCSS instead of CSS",
+      "Removed dead CSS",
+      "List all paired serial devices",
+      "Restore default settings"
+    ]
+  },
+  {
+    "title": "0.5.0",
+    "items": [
+      "Migrate save settings",
+      "Utilization updates",
+      "Improved styling & responsiveness",
+      "Fix writing of individual settings"
+    ]
+  },
+  {
+    "title": "0.4.1",
+    "items": [
+      "Fixed migration layout check"
+    ]
+  },
+  {
+    "title": "0.4.0",
+    "items": [
+      "Fixed in sync checks",
+      "Fixed applying settings",
+      "Improved layout detection when reading ESC settings",
+      "Improved migration of settings",
+      "Component refactoring",
+      "Improved tracking"
+    ]
+  },
+  {
+    "title": "0.3.0",
+    "items": [
+      "Refactored selects in firmware selector",
+      "Allow for saving logs",
+      "Cache downloaded files in local storage",
+      "Refactored firmware select elements",
+      "Refactored firmware configuration files",
+      "Allow firmware selection in flash screen",
+      "Cookie consent and  tracking"
+    ]
+  },
+  {
+    "title": "0.2.0",
+    "items": [
+      "OG Tags",
+      "Port utilization",
+      "MCU and Layout override",
+      "Local file flash"
+    ]
+  },
+  {
+    "title": "0.1.1",
+    "items": [
+      "Initial commit of the web based app",
+      "Supports flashing and setting of SiLabs based ESC's",
+      "Only supports flashing of bluejay firmware"
+    ]
+  }
+]

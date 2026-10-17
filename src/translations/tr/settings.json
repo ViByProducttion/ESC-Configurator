@@ -1,0 +1,18 @@
+{
+  "settingsHeader": "Ayarlar",
+  "closeText": "Kapat",
+  "directInput": "Sayısal Girdi",
+  "directInputHint": "Sayılar için, kaydırma çubukları yerine rakamları kullanın.",
+  "printLogs": "Logları bastır",
+  "printLogsHint": "Açılırsa logları konsola yazar.",
+  "extendedDebug": "Derinlemesine debugging",
+  "extendedDebugHint": "Fazladan okunmuş/yazılmış adresleri ve alınmış/gönderilmiş dataları yazar.",
+  "disableCommon": "Genel ayarları deaktive et",
+  "disableCommonHint": "Tüm ESC lerin tek bir ayarı olması yerine her ESC nin kendine ait ayar bölmesi olmasını sağlar.",
+  "enableAdvanced": "Gelişmiş Ayarları aktifleştir",
+  "enableAdvancedHint": "Firmware dumping gibi gelişmiş ayarları ekler.",
+  "unstableVersions": "Önceki Yayınlanmamış Firmwareleri göster",
+  "unstableVersionsHint": "Önceki Yayınlanmamış ve stabil olmayan Firmwareleri göster",
+  "skipCache": "Skip cache",
+  "skipCacheHint": "Enable this setting if you do not see the latest version in the firmware selection."
+}

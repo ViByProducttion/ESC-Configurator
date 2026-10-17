@@ -1,0 +1,10 @@
+.checkbox {
+  width: 100%;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  margin-top: 2px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
